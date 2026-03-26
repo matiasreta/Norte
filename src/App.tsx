@@ -331,7 +331,7 @@ const Footer = () => {
           <div>
             <h5 className="font-bold mb-6">Legal</h5>
             <ul className="space-y-4 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-norte-accent">Privacy Policy</a></li>
+              <li><a href="/privacy" className="hover:text-norte-accent">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-norte-accent">Terms & Conditions</a></li>
               <li><a href="#" className="hover:text-norte-accent">Support</a></li>
             </ul>
