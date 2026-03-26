@@ -158,12 +158,12 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               viewport={{ once: true }}
-              className="flex items-center justify-center p-4"
+              className="relative w-full max-w-[420px] h-[440px] mx-auto overflow-hidden"
             >
               <img 
                 src={habitos1} 
                 alt="Habits Timeline Screenshot" 
-                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
+                className="w-full h-full object-cover object-top scale-110 origin-top translate-y-6"
               />
             </motion.div>
             <div>
@@ -196,12 +196,12 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 50 }}
               viewport={{ once: true }}
-              className="order-1 md:order-2 flex items-center justify-center p-4"
+              className="order-1 md:order-2 relative w-full max-w-[420px] h-[440px] mx-auto overflow-hidden"
             >
               <img 
                 src={estadisticas} 
                 alt="Statistics View Screenshot" 
-                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
+                className="w-full h-full object-cover object-center scale-[1.15]"
               />
             </motion.div>
           </div>
@@ -212,12 +212,12 @@ const Features = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.9 }}
               viewport={{ once: true }}
-              className="flex items-center justify-center p-4"
+              className="relative w-full max-w-[420px] h-[440px] mx-auto overflow-hidden"
             >
               <img 
                 src={habitos2} 
                 alt="Norte App Habits View" 
-                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
+                className="w-full h-full object-cover object-[center_30%] scale-110 origin-[center_30%]"
               />
             </motion.div>
             <div>
