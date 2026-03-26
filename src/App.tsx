@@ -9,16 +9,17 @@ import {
   Clock, 
   BarChart3, 
   Heart, 
-  ArrowRight, 
   Download, 
   Instagram, 
   Twitter, 
   Smartphone,
   Menu,
   X,
-  ChevronRight
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import habitos1 from "./images/habitos1.png";
+import habitos2 from "./images/habitos2.png";
+import estadisticas from "./images/estadisticas.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -126,10 +127,9 @@ const Hero = () => {
         >
           <div className="relative z-10 mx-auto w-[280px] md:w-[320px] aspect-[9/19.5] bg-norte-primary rounded-[3rem] p-2.5 shadow-2xl border-[10px] border-gray-900 overflow-hidden">
             <img 
-              src="input_file_0.png" 
+              src={habitos2} 
               alt="Norte App Timeline View" 
               className="w-full h-full object-cover rounded-[2rem]"
-              referrerPolicy="no-referrer"
             />
           </div>
           
@@ -158,13 +158,12 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               viewport={{ once: true }}
-              className="bg-white p-4 rounded-[2.5rem] shadow-xl shadow-black/5 border border-gray-100 overflow-hidden"
+              className="flex items-center justify-center p-4"
             >
               <img 
-                src="input_file_0.png" 
-                alt="Timeline View Screenshot" 
-                className="w-full h-auto rounded-2xl shadow-inner"
-                referrerPolicy="no-referrer"
+                src={habitos1} 
+                alt="Habits Timeline Screenshot" 
+                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
               />
             </motion.div>
             <div>
@@ -197,13 +196,12 @@ const Features = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 50 }}
               viewport={{ once: true }}
-              className="order-1 md:order-2 bg-white p-4 rounded-[2.5rem] shadow-xl shadow-black/5 border border-gray-100 overflow-hidden"
+              className="order-1 md:order-2 flex items-center justify-center p-4"
             >
               <img 
-                src="input_file_1.png" 
+                src={estadisticas} 
                 alt="Statistics View Screenshot" 
-                className="w-full h-auto rounded-2xl shadow-inner"
-                referrerPolicy="no-referrer"
+                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
               />
             </motion.div>
           </div>
@@ -214,20 +212,13 @@ const Features = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.9 }}
               viewport={{ once: true }}
-              className="bg-white p-12 rounded-[2.5rem] shadow-xl shadow-black/5 border border-gray-100 flex items-center justify-center"
+              className="flex items-center justify-center p-4"
             >
-              <div className="relative">
-                <motion.div 
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="w-40 h-40 bg-pink-50 rounded-full flex items-center justify-center"
-                >
-                  <Heart size={64} className="text-pink-400 fill-pink-400" />
-                </motion.div>
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-yellow-400">
-                  <CheckCircle2 size={24} />
-                </div>
-              </div>
+              <img 
+                src={habitos2} 
+                alt="Norte App Habits View" 
+                className="w-[220px] h-auto rounded-[2rem] shadow-2xl"
+              />
             </motion.div>
             <div>
               <div className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-500 mb-6">
