@@ -20,6 +20,7 @@ import { useState, useEffect } from "react";
 import habitos1 from "./images/habitos1.png";
 import habitos2 from "./images/habitos2.png";
 import estadisticas from "./images/estadisticas.png";
+import NorteIcon from "./images/NorteIcon.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,10 +43,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3 shadow-sm" : "bg-transparent py-6"}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-norte-primary rounded-lg flex items-center justify-center">
-            <div className="w-1 h-4 bg-white rounded-full rotate-45 translate-x-0.5"></div>
-            <div className="w-1 h-4 bg-white rounded-full -rotate-45 -translate-x-0.5"></div>
-          </div>
+          <img src={NorteIcon} alt="Norte Logo" className="w-8 h-8 rounded-lg object-contain" />
           <span className="font-display font-bold text-xl tracking-tighter">Norte <span className="text-gray-400 font-normal text-sm ml-1">byNewSalto</span></span>
         </div>
 
@@ -317,10 +315,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-norte-primary rounded-lg flex items-center justify-center">
-                <div className="w-1 h-4 bg-white rounded-full rotate-45 translate-x-0.5"></div>
-                <div className="w-1 h-4 bg-white rounded-full -rotate-45 -translate-x-0.5"></div>
-              </div>
+              <img src={NorteIcon} alt="Norte Logo" className="w-8 h-8 rounded-lg object-contain" />
               <span className="font-display font-bold text-xl tracking-tighter">Norte <span className="text-gray-400 font-normal text-sm ml-1">byNewSalto</span></span>
             </div>
             <p className="text-gray-500 max-w-xs leading-relaxed">
