@@ -8,6 +8,6 @@ const path = window.location.pathname;
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {path === '/privacy' ? <PrivacyPolicy /> : <App />}
+    {path.endsWith('/privacy') ? <PrivacyPolicy /> : <App />}
   </StrictMode>,
 );
