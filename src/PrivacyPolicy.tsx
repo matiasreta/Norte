@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
       {/* Simple Header */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass py-4 shadow-sm">
         <div className="max-w-3xl mx-auto px-6 flex items-center justify-between">
-          <a href={import.meta.env.BASE_URL} className="flex items-center gap-2 text-norte-primary hover:text-norte-accent transition-colors font-medium">
+          <a href="/" className="flex items-center gap-2 text-norte-primary hover:text-norte-accent transition-colors font-medium">
             <ArrowLeft size={20} />
             <span>Back to Home</span>
           </a>
