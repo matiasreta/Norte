@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
 
         <div className="prose prose-gray md:prose-lg max-w-none text-gray-600 space-y-8">
           <p>
-            NewSalto built the Norte app as a <strong>[Free / Freemium / Paid]</strong> app. 
+            NewSalto built the Norte app as a <strong>Paid</strong> app. 
             This SERVICE is provided by NewSalto and is intended for use as is. This page is 
             used to inform visitors regarding our policies with the collection, use, and 
             disclosure of Personal Information if anyone decided to use our Service.
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-display font-bold text-norte-primary mb-2">5. Contact Us</h2>
             <p className="mb-0">
               If you have any questions or suggestions about our Privacy Policy, do not hesitate 
-              to contact us at: <a href="mailto:support@newsalto.com" className="text-norte-accent font-medium hover:underline"><strong>[Tu Correo de Soporte, ej: support@newsalto.com]</strong></a>
+              to contact us at: <a href="mailto:matiasrm@outlook.com.ar" className="text-norte-accent font-medium hover:underline"><strong>matiasrm@outlook.com.ar</strong></a>
             </p>
           </div>
         </div>
