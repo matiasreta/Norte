@@ -111,7 +111,11 @@ const Hero = () => {
               <Download size={20} />
               Download on the App Store
             </button>
-            <button className="bg-white border border-gray-200 text-norte-primary px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:bg-gray-50 transition-all active:scale-95">
+            <button 
+              data-tally-open="q4O2Y9" 
+              data-tally-layout="modal"
+              className="bg-white border border-gray-200 text-norte-primary px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:bg-gray-50 transition-all active:scale-95"
+            >
               Available on Google Play
             </button>
           </div>
@@ -328,7 +332,7 @@ const Footer = () => {
             <ul className="space-y-4 text-sm text-gray-600">
               <li><a href={`${import.meta.env.BASE_URL}privacy`} className="hover:text-norte-accent">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-norte-accent">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:text-norte-accent">Support</a></li>
+              <li><button data-tally-open="68RXzO" data-tally-overlay="1" className="hover:text-norte-accent cursor-pointer">Support</button></li>
             </ul>
           </div>
 
